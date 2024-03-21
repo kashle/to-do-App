@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 class="font-raleway text-3xl md:text-4xl lg:text-5xl font-bold leading-7 tracking-tighter text-center">#todo
+        </h1>
+        <!--Tabs navigation-->
+        <ul class="mb-5 flex list-none flex-row flex-wrap border-b-0 ps-0 links" role="tablist" data-twe-nav-ref>
+            <li role="presentation" class="flex-auto text-center">
+                <a href="#tabs-home01"
+                    class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+                    data-twe-toggle="pill" data-twe-target="#tabs-home01" data-twe-nav-active role="tab"
+                    aria-controls="tabs-home01" aria-selected="true">All</a>
+            </li>
+            <li role="presentation" class="flex-auto text-center">
+                <a href="#tabs-profile01"
+                    class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+                    data-twe-toggle="pill" data-twe-target="#tabs-profile01" role="tab" aria-controls="tabs-profile01"
+                    aria-selected="false">Active</a>
+            </li>
+            <li role="presentation" class="flex-auto text-center">
+                <a href="#tabs-messages01"
+                    class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+                    data-twe-toggle="pill" data-twe-target="#tabs-messages01" role="tab" aria-controls="tabs-messages01"
+                    aria-selected="false">Completed</a>
+            </li>
+
+        </ul>
+
+        <!--Tabs content-->
+        <div class="mb-6">
+            <div class="inputCon">
+                <input id="inputField" type="text" placeholder="add details">
+                <button type="button" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong" id="addToDo">Add</button>
+            </div>
+
+            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-profile01" role="tabpanel" aria-labelledby="tabs-profile-tab01">
+                Tab 2 content
+            </div>
+            <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-messages01" role="tabpanel" aria-labelledby="tabs-profile-tab01">
+                Tab 3 content
+            </div>
+            <div id="valueEle"></div>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js">
+    </script>
+
+</body>
+
+</html>
