@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+#container {
+    border-radius: 5px;
+    padding: 70px 20px 210px 20px;
+    margin: 90px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: #ffff;
+    box-shadow: #cac1c1 0px 0px 10px;
+
+}
+
+.links {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+}
+
+
+.inputCon {
+    display: flex;
+    
+}
+
+#inputField {
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    width: 300px;
+    height: 44px;
+    border: 1px solid black;
+    outline: none;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+#addToDo {
+    height: 50px;
+    width: 90px;
+    padding: 10px;
+    vertical-align: middle;
+    text-transform: none;
+    margin: 0 0 0 10px;
+    
+}
+
+.to-dos {
+    margin-top: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #container {
+        margin: 15px;
+        padding: 15px 15px 280px 15px;
+
+    }
+
+    #inputField {
+        width: auto;
+    }
+}
